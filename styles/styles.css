@@ -1,0 +1,51 @@
+@font-face {
+font-family: Moon;
+src: url("../fonts/Moon Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Arciform;
+	src: url("../fonts/Arciform.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Billy;
+	src: url("../fonts/billy.ttf") format("truetype");
+}
+
+body {
+	background-color: lightgray;
+}
+
+h1 {
+	font-size: 200px
+}
+
+.title {
+	color: black;
+	/*margin: auto auto; */
+	font-family: Billy;
+	text-align: center;
+	/*background-image: url('../images/code.png');
+	background-size: cover*/
+}
+
+.subtitle {
+	font-family: Arciform;
+	font-style: italic;
+	text-align: center;
+	font-size: 30px;
+}
+
+.headline {
+	text-align: center;
+	font-family: Moon;
+	font-size: 25px;
+	/*text-shadow: 0 0 2px black; */
+	/*color: #bada55;*/
+	/*background: url('data:image/gif;base64,R0lGODlhAwAJAIABAFFRUf///yH5BAEAAAEALAAAAAADAAkAAAIHTHBpibitCgA7') repeat-x left center;*/
+}
+
+.content {
+	text-align: justify
+}
