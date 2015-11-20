@@ -17,11 +17,8 @@ body {
 	background-color: lightgray;
 }
 
-h1 {
-	font-size: 200px
-}
-
 .title {
+	font-size: 200px;
 	color: black;
 	/*margin: auto auto; */
 	font-family: Billy;
@@ -39,7 +36,7 @@ h1 {
 
 .headline {
 	text-align: center;
-	font-family: Moon;
+	font-family: Arciform;
 	font-size: 25px;
 	/*text-shadow: 0 0 2px black; */
 	/*color: #bada55;*/
@@ -48,4 +45,36 @@ h1 {
 
 .content {
 	text-align: justify
+}
+
+.tag {
+	position: absolute;
+	font-family: Arciform;
+	color: black;
+	visibility: hidden;
+}
+
+.tag:hover {
+	text-shadow: 0 0 2px black; 
+	color: #bada55;
+	text-decoration: none;
+}
+
+.tag-box {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: 16px solid orange;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+
+.move {
+		/*transform:translate(200px,100px);*/
+		visibility: visible
 }
