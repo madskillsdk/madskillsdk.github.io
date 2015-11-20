@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="styles/bootstrap.min.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/jquery-confirm.css">
+  <link rel="stylesheet" href="layout/shell/shell.css">
 </head>
 
-<body>
+<body ng-app="app">
   <div class="container">
     <div class="row">
       <h1 class="title"><span style="font-weight: normal">mad</span><span style="text-shadow: 0 0 2px black; color: #bada55;">S</span><span style="font-weight: normal">kills</span></h1>
@@ -22,6 +23,8 @@
     <div class="row">
       <p class="subtitle">You pitch it, we build it!</p>
     </div>
+
+    <div ui-view></div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-confirm.js"></script>

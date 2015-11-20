@@ -112,14 +112,7 @@ packages/
 
 #Ignore dlls
 #*.dll
-NugetPackages/*
 
-CMB.Website/node_modules
-CMB.Website/public/
-CMB.Website/public-optimized/
-CMB.Website/site/javascripts/vendor
-CMB.Website/site/stylesheets/vendor
-CMB.Website/.mimosa/bower/
 bower_components/
 _NCrunch_*
 
@@ -129,3 +122,9 @@ _NCrunch_*
 *.REMOTE.*
 
 *.vscode
+
+# NPM
+node_modules/
+
+# distribution folder
+dist/
