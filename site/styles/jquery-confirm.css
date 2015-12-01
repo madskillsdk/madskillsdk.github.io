@@ -83,12 +83,13 @@ body.jconfirm-noscroll {
 .jconfirm .jconfirm-box div.title {
   font-size: 24px;
   font-weight: bold;
-  font-family: inherit;
+  font-family: Arciform;
   padding: 10px 15px 5px;
 }
 .jconfirm .jconfirm-box div.content {
   padding-top: 10px;
   padding: 10px 15px 10px;
+  font-family: Arciform;
 }
 .jconfirm .jconfirm-box div.content:empty {
   height: 40px;

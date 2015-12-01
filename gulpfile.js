@@ -58,7 +58,7 @@ gulp.task('serve', ['build'], function () {
 		ghostMode: false,
 		port: 9000,
 		server: {
-			baseDir: ['site']
+			baseDir: ['.tmp', 'site']
 		}
 	})
 
@@ -77,8 +77,8 @@ gulp.task('serve', ['build'], function () {
 		.watch(['site/**/*.js'], ['scripts'])
 		.on('change', handleSourceFileDeleted)
 		.on('change', showChange(".js"))
-		.on('error', showError(".js"));
-    //.on('change', reload);
+		.on('error', showError(".js"))
+    	.on('change', reload);
 
 	gulp
 		.watch(['site/**/*.scss', 'site/**/*.css'], ['styles'])
@@ -100,7 +100,7 @@ gulp.task('build', ['html', 'scripts', 'styles', 'images', 'fonts'], function ()
 function handleSourceFileDeleted(event) {
 	if (event.type !== 'deleted') return;
 
-	var sourceFilePath = path.relative(path.resolve('app'), event.path);
+	var sourceFilePath = path.relative(path.resolve('site'), event.path);
 
 	console.log("path of deleted source file", sourceFilePath);
 

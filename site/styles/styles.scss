@@ -1,0 +1,26 @@
+@font-face {
+font-family: Moon;
+src: url("../../fonts/Moon Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Arciform;
+	src: url("../../fonts/Arciform.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Billy;
+	src: url("../../fonts/billy.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: Dreamer;
+	src: url("../../fonts/DREAMERS BRUSH.otf") format("opentype");
+}
+
+body {
+	background-color: lightgray;
+}
+
+$badass: #bada55;
+

@@ -1,13 +1,19 @@
 <div style="text-align: center" class="row">
-	<a href="javascript:void(0)" onclick="var tags = document.getElementsByClassName('tag');
-        for (var i = 0; i < tags.length; i++) {tags[i].className = 'move'}" class="headline">Click to check out our toolbox!</a>
+	<span ng-show="foldOut" class="toolbox-link" ng-click="showToolbox()">Click here to unfold our toolbox!</span>
+	<span ng-show="!foldOut" class="toolbox-link" ng-click="showToolbox()">Click here to fold our toolbox!</span>
 </div>
-<!--left: 200px;top:400px;-->
+
 <div class="row" style="text-align: center">
-	<a class="tag" style="font-size: 60px" href="javascript:void(0)" onclick="$.alert({title: '.Net', animation: 'scaley', content: 'Been working with .Net since version 2005.'});">.Net</a>
-	<a class="tag" style="left: 250px;top:500px; font-size: 30px" href="javascript:void(0)" onclick="$.alert({title: 'git', animation: 'scaley', content: 'We love git! git is our preferred VCS. We have used git since 2013.'});">git</a>
-	<a class="tag" style="left: 650px;top:600px; font-size: 40px" href="javascript:void(0)" onclick="$.alert({title: 'ASP.NET Web API', animation: 'scaley', content: ''});">ASP.NET Web API</a>
-	<a class="tag" style="left: 850px;top:500px; font-size: 50px" href="javascript:void(0)" onclick="$.alert({title: 'SQL Server', animation: 'scaley', content: ''});">SQL Server</a>
-	<a class="tag" style="left: 1050px;top:400px; font-size: 50px" href="javascript:void(0)" onclick="$.alert({title: 'C#', animation: 'scaley', content: ''});">C#</a>
+	<a id="net" class="tag five" href="javascript:void(0)" onclick="$.alert({title: '.net', animation: 'scaley', content: 'Been working with .net since version 2005.'});">.net</a>
+	<a id="git" class="tag four" href="javascript:void(0)" onclick="$.alert({title: 'git', animation: 'scaley', content: 'We love git! git is our preferred VCS. We have used git since 2013.'});">git</a>
+	<a id="webapi" class="tag four" href="javascript:void(0)" onclick="$.alert({title: 'ASP.NET Web API', animation: 'scaley', content: ''});">ASP.NET Web API</a>
+	<a id="sqlserver" class="tag five" href="javascript:void(0)" onclick="$.alert({title: 'SQL Server', animation: 'scaley', content: ''});">SQL Server</a>
+	<a id="c" class="tag five" href="javascript:void(0)" onclick="$.alert({title: 'C#', animation: 'scaley', content: ''});">C#</a>
+	<a id="tfs" class="tag three" href="javascript:void(0)" onclick="$.alert({title: 'TFS', animation: 'scaley', content: ''});">TFS</a>
+	<a id="es" class="tag four" href="javascript:void(0)" onclick="$.alert({title: 'ElasticSearch', animation: 'scaley', content: ''});">ElasticSearch</a>
+	<a id="ef" class="tag four" href="javascript:void(0)" onclick="$.alert({title: 'Entity Framework', animation: 'scaley', content: ''});">Entity Framework</a>
+	<a id="ng" class="tag four" href="javascript:void(0)" onclick="$.alert({title: 'AngularJS', animation: 'scaley', content: ''});">AngularJS</a>
+	<a id="mvc" class="tag three" href="javascript:void(0)" onclick="$.alert({title: 'ASP.NET MVC', animation: 'scaley', content: ''});">ASP.NET MVC</a>
+	<a id="cqrs" class="tag three" href="javascript:void(0)" onclick="$.alert({title: 'CQRS + ES', animation: 'scaley', content: ''});">CQRS + ES</a>	
 </div>
-</div>
+
