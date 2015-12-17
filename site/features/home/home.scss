@@ -1,23 +1,4 @@
-@import "..\..\styles\styles.scss";
-
-.title {
-	font-size: 200px;
-	color: black;
-	margin: 100px 0 0 0;
-	font-family: Billy;
-	text-align: center;
-	line-height: 0.5;
-	/*background-image: url('../images/code.png');
-	background-size: cover*/
-}
-
-.subtitle {
-	font-family: Arciform;
-	font-style: italic;
-	text-align: center;
-	font-size: 30px;
-	margin-top: 30px;
-}
+@import 'styles.scss';
 
 .toolbox-link {
 	font-family: Arciform; 
