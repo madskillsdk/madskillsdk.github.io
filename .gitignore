@@ -127,4 +127,4 @@ _NCrunch_*
 node_modules/
 
 # distribution folder
-dist/
+# dist/

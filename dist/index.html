@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>madSkills</title>
+
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/jquery-confirm.css">
+  <link rel="stylesheet" href="layout/shell/shell.css">
+  <link rel="stylesheet" href="features/home/home.css">
+</head>
+
+<body ng-app="app">
+  <div class="container">
+    <div class="row">
+      <div class="title"><span class="title">mad</span><span class="big_s">S</span><span style="font-weight: normal">kills</span></div>
+    </div>
+    <div class="row">
+      <p class="subtitle">You pitch it, we build it!</p>
+    </div>
+
+    <div ui-view></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-confirm.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/move.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app.routes.js"></script>
+
+    <script src="features/home/homeCtrl.js"></script>
+
+    <script src="app.run.js"></script>
+</body>
+<footer>
+  <div class="footer">
+    madSkills IVS | CVR: 37300284 | phone: 31 68 12 67 | <a href="mailto:kontakt@madskills.dk">kontakt@madskills.dk</a>
+  </div>
+</footer>
+
+</html>
