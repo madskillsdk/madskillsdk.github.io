@@ -52,6 +52,12 @@ gulp.task('fonts', function () {
 		.pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('cname', function () {
+	return gulp.src(['site/CNAME'])
+		.pipe($.plumber())
+		.pipe(gulp.dest('dist/'));
+	});
+
 gulp.task('serve', ['build'], function () {
 	browserSync({
 		notify: false,
@@ -90,7 +96,7 @@ gulp.task('serve', ['build'], function () {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('build', ['html', 'scripts', 'styles', 'images', 'fonts'], function () {
+gulp.task('build', ['html', 'scripts', 'styles', 'images', 'fonts', 'cname'], function () {
 	return gulp.src('dist/**/*').pipe($.size({ title: 'build', gzip: true }));
 });
 
