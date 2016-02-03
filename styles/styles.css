@@ -1,10 +1,10 @@
 @font-face {
   font-family: Moon;
-  src: url("../../fonts/Moon Light.otf") format("opentype"); }
+  src: url("../../fonts/Moon Light.otf") format("embedded-opentype"); }
 
 @font-face {
   font-family: Arciform;
-  src: url("../../fonts/Arciform.otf") format("opentype"); }
+  src: url("../../fonts/Arciform.otf") format("embedded-opentype"); }
 
 @font-face {
   font-family: Billy;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: Dreamer;
-  src: url("../../fonts/DREAMERS BRUSH.otf") format("opentype"); }
+  src: url("../../fonts/DREAMERS BRUSH.otf") format("embedded-opentype"); }
 
 body {
   background-color: lightgray; }
